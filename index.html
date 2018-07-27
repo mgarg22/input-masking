@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Input Masking Demo</title>      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        
+        <div class="container input-masking--wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="input-masking--heading">Input Masking</h5>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6 input-label--wrapper">
+                        <span class="input--label">Date</span>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="input--field" name="date" placeholder="yyyy-mm-dd" maxlength="10" onkeyup="app.date(event);">
+                    </div>
+                    <div class="col-md-6 input-label--wrapper">
+                            <span class="input--label">Contact Number</span>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="input--field" name="contactnumber" placeholder="xxx-xxx-xxxx" maxlength="12" onkeyup="app.contactNumber(event);">
+                    </div>
+                    <div class="col-md-6 input-label--wrapper">
+                            <span class="input--label">Credit Card</span>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="input--field" name="creditcard" placeholder="xxxx xxxx xxxx xxxx" maxlength="19" onkeyup="app.creditCard(event);">
+                    </div>
+                    <div class="col-md-6 input-label--wrapper">
+                            <span class="input--label">Postal Code</span>
+                    </div>
+                    <div class="col-md-6">
+                            <input type="text" class="input--field" name="postalcode" placeholder="xxx xxx" maxlength="7" onkeyup="app.postalCode(event);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
+
+
